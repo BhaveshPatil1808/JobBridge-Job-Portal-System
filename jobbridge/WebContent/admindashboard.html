@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - JobBridge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 220px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 30px 20px;
+            height: 100%;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 40px;
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .main {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        .topbar {
+            background-color: white;
+            padding: 15px 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .dashboard-section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .dashboard-section h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .dashboard-section p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .logout {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .logout a {
+            background-color: #ff4d4d;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .logout a:hover {
+            background-color: #e60000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Admin Panel</h2>
+    <a href="#">Dashboard</a>
+    <a href="manageemp.jsp">Manage Employers</a>
+    <a href="manageseeker.jsp">Manage Seekers</a>
+    <a href="postedjob.jsp">Posted Jobs</a>
+    <a href="viewapplications.jsp">Applications</a>
+    <div class="logout">
+        <a href="admin_login.html">Logout</a>
+    </div>
+</div>
+
+<div class="main">
+    <div class="topbar">Welcome, Admin</div>
+
+    <div class="dashboard-section">
+        <h3>Dashboard Overview</h3>
+        <p>
+            Use the admin panel to manage job postings, employers, job seekers, and applications.
+            This dashboard is the central hub for maintaining JobBridge's job portal system.
+        </p>
+        <p>
+            Here, you can view statistics, review new registrations, verify job posts, and track user activity.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

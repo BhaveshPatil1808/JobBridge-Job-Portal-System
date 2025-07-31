@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Application Accepted - JobBridge</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e6f9ec, #d0f0dc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .message-box {
+      background-color: #ffffff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 440px;
+    }
+
+    .checkmark {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      background-color: #28a745;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: pop 0.6s ease-out forwards;
+    }
+
+    .checkmark::after {
+      content: '✔';
+      color: white;
+      font-size: 40px;
+      transform: scale(0);
+      animation: check 0.4s ease 0.4s forwards;
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes check {
+      to {
+        transform: scale(1);
+      }
+    }
+
+    .message-box h1 {
+      color: #28a745;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .message-box p {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .message-box a {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    .message-box a:hover {
+      background-color: #218838;
+    }
+
+    @media (max-width: 500px) {
+      .message-box {
+        width: 90%;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="message-box">
+    <div class="checkmark"></div>
+    <h1>Application Posted!</h1>
+    <p>The applicant has been successfully Posted.</p>
+    <a href="viewapplications.jsp">← Back to Applications</a>
+  </div>
+
+</body>
+</html>

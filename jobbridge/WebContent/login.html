@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Login - JobBridge</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 40px 35px;
+            width: 360px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #fff;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffffff;
+            font-size: 26px;
+            letter-spacing: 1px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .login-container input::placeholder {
+            color: #e0e0e0;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: #00c6ff;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #007bff;
+        }
+
+        .login-container p {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #f1f1f1;
+        }
+
+        .login-container a {
+            color: #00e6ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <!-- Add Image -->
+    <img src="images/admin.jpg" alt="JobBridge Logo" style="width: 100px; height: 100px; display: block; margin: 0 auto 20px auto; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+
+    <h2>User Login</h2>
+    <form action="login" method="post">
+        <input type="text" name="email" placeholder="Your Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+</div>
+
+
+</body>
+</html>
